@@ -1,0 +1,243 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tikz}
+\renewcommand{\familydefault}{\sfdefault}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.3em}
+\setlength{\fboxsep}{3pt}
+
+\newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}
+\newcommand{\onetape}[2]{%
+  \begin{tikzpicture}[x=0.10in,y=0.11in,baseline=-0.5ex]
+    \draw (0,0) rectangle (#1,1);
+    \foreach \x in {1,...,#1} {\draw (\x,0) -- (\x,1);}
+    \fill[blue!14] (0,0) rectangle (#2,1);
+    \draw (0,0) rectangle (#1,1);
+    \foreach \x in {1,...,#1} {\draw (\x,0) -- (\x,1);}
+  \end{tikzpicture}%
+}
+\newcommand{\tapediagrams}{\onetape{8}{2}\hspace{0.35em}\onetape{4}{1}}
+\newcommand{\fractionnumberline}{%
+  \begin{center}
+    \begin{tikzpicture}[x=1in]
+      \draw[<->,line width=0.45pt] (0,0) -- (6.9,0);
+    \end{tikzpicture}
+  \end{center}
+}
+\newcommand{\answerbox}[1]{%
+  \begin{center}
+    {\bfseries #1}\\
+    \vspace*{\fill}
+    {\Large Write your answer\\ in your Class Notes}
+  \end{center}
+  \vspace*{\fill}
+}
+
+\begin{document}
+
+\begin{center}
+    {\Large\bfseries Assignment 4: Fractions}\\[4pt]
+    {\large\bfseries DO NOT WRITE ON THIS PAPER}\\[4pt]
+\end{center}
+\vspace{-0.8em}
+
+\noindent\hfill\fbox{%
+  \begin{minipage}[t][0.34\textheight][t]{.95\textwidth}
+    \begin{center}
+      \textbf{Part A}
+    \end{center}
+
+    On your whiteboard, draw the table below.
+
+    Flip two cards. The first card is your numerator and the second card is your denominator. Find an
+    equivalent fraction to your original fraction and draw tape diagrams to represent both fractions.
+
+    \begin{center}
+    \renewcommand{\arraystretch}{1.55}
+    \begin{tabular}{|C{0.10\textwidth}|C{0.10\textwidth}|C{0.16\textwidth}|C{0.23\textwidth}|C{0.21\textwidth}|}
+      \hline
+      \rule{0pt}{2.7em}\textbf{Card 1} & \textbf{Card 2} & \textbf{Fraction: }$\frac{\text{card1}}{\text{card2}}$ &
+      \textbf{Equivalent Fraction} & \textbf{Tape Diagrams}\\
+      \hline
+      \rule{0pt}{2.8em}2 & 8 & $\frac{2}{8}$ & $\frac{2\div2}{8\div2}=\frac{1}{4}$ & \tapediagrams
+      \\
+      \hline
+      \rule{0pt}{1.9em} & & & & \\
+      \hline
+    \end{tabular}
+    \end{center}
+
+    On your paper write one example and your answer to: What does it mean for two fractions to be
+    equivalent?
+
+    \vfill
+  \end{minipage}%
+}\hfill
+
+\noindent\hfill\fbox{%
+  \begin{minipage}[t][0.48\textheight][t]{.95\textwidth}
+    \begin{center}
+      \textbf{Part B}
+    \end{center}
+
+    Use the process from part A to create two fractions. Convert each fraction so they have common denom-
+    inator.
+
+    Add to evaluate the sum Fraction 1 + Fraction 2. Subtract to evaluate the difference Fraction 1 -- Fraction
+    2.
+
+    \begin{center}
+    \renewcommand{\arraystretch}{1.65}
+    \setlength{\tabcolsep}{3pt}
+    \scriptsize
+    \begin{tabular}{|C{0.08\textwidth}|C{0.08\textwidth}|C{0.12\textwidth}|C{0.14\textwidth}|C{0.14\textwidth}|C{0.15\textwidth}|C{0.16\textwidth}|}
+      \hline
+      \textbf{Fraction 1} & \textbf{Fraction 2} & \textbf{Common Denom.} &
+      \textbf{F1 w/ Common Denom.} & \textbf{F2 w/ Common Denom.} &
+      \textbf{Sum (F1 + F2)} & \textbf{Difference (F1 - F2)}\\
+      \hline
+      $\dfrac{2}{3}$ & $\dfrac{5}{2}$ & 6 &
+      $\dfrac{2}{3}\cdot\dfrac{2}{2}=\dfrac{4}{6}$ &
+      $\dfrac{5}{2}\cdot\dfrac{3}{3}=\dfrac{15}{6}$ &
+      $\dfrac{4}{6}+\dfrac{15}{6}=\dfrac{19}{6}$ &
+      $\dfrac{4}{6}-\dfrac{15}{6}=-\dfrac{11}{6}$
+      \\
+      \hline
+      \rule{0pt}{2.2em} & & & & & & \\
+      \hline
+    \end{tabular}
+    \normalsize
+    \end{center}
+
+    \vfill
+  \end{minipage}%
+}\hfill
+
+\newpage
+
+\noindent\hfill\fbox{%
+  \begin{minipage}[t][0.40\textheight][t]{.95\textwidth}
+    \begin{center}
+      \textbf{Part C}
+    \end{center}
+
+    Place the following numbers on a number line in the correct order (from smallest to biggest) and with
+    appropriate spacing:
+    \[
+      0,\;1,\;\frac{1}{4},\;\frac{1}{3},\;\frac{2}{3},\;\frac{1}{2},\;\frac{2}{5},\;\frac{3}{4}
+    \]
+
+    \vspace{1.5em}
+    \fractionnumberline
+    \vspace{1.5em}
+
+    \emph{Hint: Think about equivalent fractions}
+    \vfill
+  \end{minipage}%
+}\hfill
+
+\noindent\hfill\fbox{%
+  \begin{minipage}[t][0.46\textheight][t]{.95\textwidth}
+    \begin{center}
+      \textbf{Question 1}
+    \end{center}
+
+    \textbf{Big Question:} Draw a tape diagram to represent $11/6$. Lets say the unit represents a 6-pack of soda.
+
+    \begin{enumerate}
+      \item[a)] Describe what the denominator tells us about the pack of soda and how you drew that in your
+      diagram.
+      \item[b)] Describe what the numerator tells us about packs of soda and how you drew that in your diagram.
+      \item[c)] The numerator is bigger than the denominator for this fraction. What does this mean in terms of
+      packs of soda, and how did you draw this in your diagram?
+    \end{enumerate}
+
+    Use the following mathematical terms in your descriptions: denominator, numerator, unit
+    \vfill
+  \end{minipage}%
+}\hfill
+
+\newpage
+
+\noindent\hfill\fbox{%
+  \begin{minipage}[t][0.42\textheight][t]{.70\textwidth}
+    \begin{center}
+      \textbf{Question 2 Work}
+    \end{center}
+
+    You walk $\dfrac{1}{8}$ miles to a shoe store. Then you walk another $\dfrac{1}{3}$ miles to a clothing
+    store. How many miles have you walked in all?
+
+    Your answer should include a fraction in simplest form and be written in a complete sentence.
+    \vfill
+  \end{minipage}%
+}%
+\fbox{%
+  \begin{minipage}[t][0.42\textheight][t]{0.24\textwidth}
+    \answerbox{Question 2 Answer}
+  \end{minipage}%
+}\hfill
+
+\noindent\hfill\fbox{%
+  \begin{minipage}[t][0.42\textheight][t]{.70\textwidth}
+    \begin{center}
+      \textbf{Question 3 Work}
+    \end{center}
+
+    Maya finished her English assignment in $\dfrac{2}{5}$ hours. Then she completed her
+    math assignment in $\dfrac{1}{2}$ hours. How much more time did Maya spend on her
+    math assignment?
+
+    Your answer should include a fraction in simplest form and be written in a complete sentence.
+    \vfill
+  \end{minipage}%
+}%
+\fbox{%
+  \begin{minipage}[t][0.42\textheight][t]{0.24\textwidth}
+    \answerbox{Question 3 Answer}
+  \end{minipage}%
+}\hfill
+
+\newpage
+
+\begin{center}
+    \textbf{Additional Space}
+\end{center}
+
+\vspace{0.4em}
+
+\noindent\makebox[\textwidth][c]{%
+\fbox{%
+  \rule{0pt}{0.20\textheight}\rule{7.35in}{0pt}%
+}%
+}
+
+\vspace{0.45em}
+
+\noindent\makebox[\textwidth][c]{%
+\fbox{%
+  \rule{0pt}{0.20\textheight}\rule{7.35in}{0pt}%
+}%
+}
+
+\vspace{0.45em}
+
+\noindent\makebox[\textwidth][c]{%
+\fbox{%
+  \rule{0pt}{0.20\textheight}\rule{7.35in}{0pt}%
+}%
+}
+
+\vspace{0.45em}
+
+\noindent\makebox[\textwidth][c]{%
+\fbox{%
+  \rule{0pt}{0.20\textheight}\rule{7.35in}{0pt}%
+}%
+}
+
+\end{document}
